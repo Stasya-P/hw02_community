@@ -21,7 +21,7 @@ class Post(models.Model):
         verbose_name='Сообщество')
 
     class Meta:
-        ordering = ['-pub_date']
+        ordering = ('-pub_date',)
 
 
 class Group(models.Model):
